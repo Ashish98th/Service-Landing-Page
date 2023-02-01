@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service landing Age</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- (33) Complete Navbar should be inside header tag -->
+  <!-- (41)Complete carousel should be inside header tag  -->
+  <!-- (35) home id added to header tag  -->
+<header id="home">
+
+  <!-- (8)Header is added  -->
+  <!-- (29)to fixed navbar at the top class used fixed-top in below nav tag -->
+
+  <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 bg-light border-bottom fixed-top">
+      <!-- (7)border bottom is added to navbar  -->
+      <!-- (6) bg-secondary added for navbar background color -->
+      <!-- (4) padding px-4 added both the sides of Navbar in x-direction -->
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="#">Techno<span class="text-info">-Web</span></a>
+          <!-- (2) text-info class addded for text color  -->
+          <!-- (3)fs-1 class added to make the font-size bigger  -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--(1) margin left :auto ms-auto-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+              <!-- (5) to make the right side of the content center when displaying in mobile  -->
+                  <!-- (1) margin left :auto ms-auto-->
+              <li class="nav-item">
+                <!-- (36)home added in href below -->
+                <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
+                <!-- (7) text-primary color added to make the home color blue  -->
+              </li>
+              <li class="nav-item">
+                <!-- (37)href #about added  -->
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#services">App Development</a></li>
+                  <li><a class="dropdown-item" href="#services">Web Design</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#services">Graphic Design</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <!-- (42) href #team added -->
+                <a class="nav-link" href="#team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <!-- (43) href #contact added  -->
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+         
+            </ul>
+     
+          </div>
+        </div>
+      </nav>
+<!-- Navbar -->
+
+
+<!-- (9)Carousel added  -->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="c1.jpg" class="d-block w-100" alt="...">
+<!-- (50)removed d-none display none from the below div to display the caption  -->
+      <div class="carousel-caption  d-md-block mb-3">
+        <h5 class="text-info fs-2">We offer Website Development</h5>
+        <p class="text-warning fs-4">Get a high Performance Website For Your Growing Business</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="c2.jpg" class="d-block w-100" alt="...">
+      <!-- (53)removed d-none display none from the below div to display the caption  -->
+      <div class="carousel-caption d-md-block mb-3">
+        <h5 class="fs-2 text-danger">DELIVERING STELLAR MOBILE APP DEVELOPMENT SERVICES</h5>
+        <p class="text-warning">We help global brands design and build superior digital products, enabling seamless user experiences across all modern platforms and devices.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="c4.jpg" class="d-block w-100" alt="...">
+      <!-- (51)removed d-none display none from the below div to display the caption  -->
+      <div class="carousel-caption d-md-block mb-3">
+        <h5 class="fs-1 text-primary">Graphic Design</h5>
+        <p class="text-primary" style="--bs-text-opacity: .8;">WHAT PEOPLE LIKE CHANGES, GRAPHIC DESIGN TRENDS CHANGE</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel  -->
+</header> 
+
+        <!-- ABOUT US SECTION  -->
+
+<!-- (35) id about added below section -->
+<section class="about mt-5 mb-5" id="about">
+  <!-- (11)setting top & bottom margin my-5  -->
+<!-- (10)this default container class will have space on both sides of the container -->
+  <div class="container py-2">
+
+    <!-- (34)data-aos animation zoom in in about us added below -->
+    <!-- (35)data-aos-offset added for late animation  -->
+    <h1 class="text-center" data-aos="zoom-in" data-aos-offset="200">About <span class="text-info">Us</span></h1>
+    <!-- (12)horizontal line after heading -->
+    <!-- (13)set width to 25% of the viewport  -->
+    <hr class="w-25 mx-auto">
+  </div>
+
+  <!-- grid system  -->
+
+<!-- (14)created row -->
+<!-- (15)creating a 6 by 6 column  -->
+  <div class="row">
+    <!-- (16) column small screen 12,medium screen 6,large screen 6,extra small 12 show them in these type of columns -->
+
+    <!-- First Column  -->
+    <!-- (45) data aos fade right animation added to below div element  -->
+    <!-- (46)data-aos-offset=300 added for late animation  -->
+<div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-right" data-aos-offset="300">
+ <h1 class="ps-4">What do You <span class="text-info">want to know?</span></h1>
+
+ <!-- (17)padding add p-3  -->
+ <p class="p-3">We are one of the well-known Html website development company in Assam with a team of skilled HTML Developers concentrated on latest HTML5, Google API CSS Manifest, Content Scripting, and many other. Now a days, your website is the foundation of your presence in the Internet, it should be look and  it should be look and feel professional for strong presence over your competitors. With HTML5 responsive design it enables us to make your website coompatible to iPhone, android or any other devices including tablets and desktops. Our team adds superior effects for streaming video and audio, Geo location, animated website banners, Offline cache and more tags you can think of o build an innovative, user friendly, more engaging and best performing.
+
+ </p>
+
+ <!-- (18)button margin added mb-5 for more about us button  -->
+ <button type="button" class="btn btn-outline-info mb-5">More About Us</button>
+
+ <!-- Accordion  -->
+ <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Website Designing
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"> Top Web Design Company in Guwahati, Assam, India Our customers are companies of all sizes ranging from start-ups to large enterprises who realize that they need a professional internet solution to set up revenue streams, build communication channels or streamline business operations.Our core competency is to promote your business online, to create online business opportunities and leads, and to empower your business.
+</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        App Development 
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        We are one of the top Mobile Application Development company in Assam with a team of skilled Developers concentrated on latest Android Java and Kotlin, iOS, React Native, NodeJS and other JavaScript Libraries and many other. Mobile app development indeed nowadays necessary for all the business. We, as a very well-known mobile application development company can provide high quality standard mobile app of any category. We have worked with diverse brands, organizations, start-ups and individuals to create powerful apps from excellent idea.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Graphic Design
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Our graphic design services cover a wide range of products – brochures, business cards, publications, mailers, posters and billboards – we’ve pretty much designed it all. With nearly 20 years of experience designing for print and the web, we’ll help your business convert potential clients into paying customers with well designed, printed collateral.</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- Second Column  -->
+<!-- (47)data aos fade left and data aos offset added to below div element  -->
+<div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-left" data-aos-offset="200">
+  <img class="img-fluid img-thumbnail" src="design.jpg">
+</div>
+  </div>
+</section>
+
+<!-- Services Section  -->
+
+<!-- (38) id services added to below section  -->
+<Section id="services" class="mt-5">
+
+  <!-- (48) data-aos & data-aos-offset added to below h1 tag  -->
+  <h1 class="text-center mt-5 pt-5" v data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" data-aos-offset="200">Our <span class="text-info">Services</span></h1>
+     <hr class="w-25 mx-auto">
+
+     <!-- Coulmn for Services card  -->
+     <!-- (19) row class with div added  -->
+
+     <!-- Card Row  -->
+     <!-- (49) data-aos added tyo below div  -->
+     <div class="row"  data-aos="fade-right" data-aos-offset="300">
+
+      <!-- Card-1  -->
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+             <div class="card bg-info text-white p-2 rounded mb-2">
+      <div class="card-body">
+       <i class="fa fa-users text-primary bg-light p-2 mb-2 rounded"></i>
+        <h5 class="card-title">Web Portals</h5>
+        <p class="card-text">Since 2005, Techno-Web has created web portals for different audiences: customers, business partners, ecommerce users, patients, vendors, interest-based communities.</p>
+        <a href="#" class="btn btn-light">Sent your Request <i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+     </div>
+
+     <!-- card-2  -->
+     <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <!-- (20) card added from bootstrap  -->
+      <!-- (24)background-primary added text color changed  -->
+             <div class="card bg-info text-white p-2 rounded mb-2">
+      <div class="card-body">
+          <!-- (22) icon added fa fa-users  -->
+           <!-- (23) padding p-2 added margin rounded margin-bottom mb-2 added  -->
+       <i class="fa fa-users text-primary bg-light p-2 mb-2 rounded"></i>
+        <h5 class="card-title">Websites</h5>
+        <p class="card-text">250+ businesses, governmental and non-profit organizations use the websites we’ve created for corporate presentation and brand building. We make sure our websites have an easy-to-use page editor.</p>
+        <a href="#" class="btn btn-light">Sent your Request <i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+     </div>
+
+     <!-- card-3  -->
+     <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+         <div class="card bg-info text-white p-2 rounded mb-2">
+      <div class="card-body">
+         <i class="fa fa-users text-primary bg-light p-2 mb-2 rounded"></i>
+        <h5 class="card-title">Web apps</h5>
+        <p class="card-text">We build web apps for efficient management of different business activities. We apply smart automation to streamline workflows and integrate corporate systems together for coherent operation.</p>
+        <a href="#" class="btn btn-light">Sent your Request <i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+     </div>
+     </div>
+
+     <!-- Another Row  -->
+
+     <!-- (21)added margin top-5 for this row -->
+     <div class="row mt-5"  data-aos="fade-left" data-aos-offset="300">
+
+      <!-- Card-4  -->
+     <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+
+     
+         <div class="card bg-info text-white p-2 rounded mb-2">
+      <div class="card-body">
+         <i class="fa fa-users text-primary bg-light p-2 mb-2 rounded"></i>
+        <h5 class="card-title">Front-end design and development</h5>
+        <p class="card-text">Our web designers closely analyze the user audience to understand their needs and reflect these findings in UI design.Having agreed on the look and feel of a web app with project stakeholders.</p>
+        <a href="#" class="btn btn-light">Sent your Request <i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+     </div>
+
+     <!-- card-5  -->
+     <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+             <div class="card bg-info text-white p-2 rounded mb-2">
+      <div class="card-body">
+       <i class="fa fa-users text-primary bg-light p-2 mb-2 rounded"></i>
+        <h5 class="card-title">Help desk</h5>
+        <p class="card-text">Providing L1, L2 support services,delivering hot-fixes within 24 hours to resolve any issues in usage, technology and code that may arise.We help you provide trouble-free functionality of your web app. </p>
+        <a href="#" class="btn btn-light">Sent your Request <i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+     </div>
+
+     <!-- card-6  -->
+     <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+             <div class="card bg-info text-white p-2 rounded mb-2">
+      <div class="card-body">
+       <i class="fa fa-users text-primary bg-light p-2 mb-2 rounded"></i>
+        <h5 class="card-title">Integration</h5>
+        <p class="card-text">We set up APIs to integrate your web app with corporate or third-party systems and services. App integration ensures immediate data synchronization across systems.</p>
+        <a href="#" class="btn btn-light">Sent your Request <i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+     </div>
+     </div>
+</Section>
+
+<!-- TEAM SECTION -->
+
+<!-- (39)id team added to below section  -->
+<section id="team">
+ <h1 class="text-center mt-5 pt-5"data-aos="zoom-in-down" data-aos-offset="200">Our <span class="text-info">Team</span></h1>
+     <hr class="w-25 mx-auto">
+
+     <div class="row">
+ 
+      <!-- Team-1  -->
+
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12"data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" data-aos-offset="200">
+    <div class="card">
+      <div class="card-body">
+        <!-- (22) image added with responsiveness img-fluid rounded border color  -->
+        <img src="t1.jpg" class="img-fluid border rounded-circle p-2 rounded border-primary">
+        <h5 class="card-title text-center mt-4">Christina Alee</h5>
+        <p class="card-text">Christina is awEb Developer having 7+ years of experience both frontend backend knowledge</p>
+        <a href="#" class="btn btn-primary  text-center">Full Stack Developer</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team-2  -->
+  
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" data-aos-offset="300">
+    <div class="card">
+      <div class="card-body">
+               <img src="t2.jpg" class="img-fluid border rounded-circle p-2 rounded border-primary">
+         <h5 class="card-title text-center mt-4">Mario Antina</h5>
+        <p class="card-text">Mario Antina is a App Developer having 5+ years of experience</p>
+        <a href="#" class="btn btn-primary">App Developer</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Team-3  -->
+
+  <div class="col-sm-12 col-md-4 col-lg-4 col-12" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" data-aos-offset="400">
+    <div class="card">
+      <div class="card-body">
+               <img src="t3.jpg" class="img-fluid border rounded-circle p-2 rounded border-primary">
+        <h5 class="card-title text-center mt-4">Alex Pol</h5>
+        <p class="card-text">Alex is a graphic desginer having 3 years of experince he designs according to the  client requirement</p>
+        <a href="#" class="btn btn-primary text-center">Graphic Designer</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Contact Section  -->
+
+<!-- (40)id team added to below section  -->
+<!-- (43) id contact added to below section  -->
+<section id="contact">
+  <h1 class="text-center mt-5 pt-5"  data-aos="fade-right" data-aos-offset="200">Feel Free <span class="text-info">to Connect</span></h1>
+     <hr class="w-25 mx-auto">
+
+  <div class="row">
+
+    <!-- Contact Form  -->
+
+
+    <!-- (23)grid created  -->
+<div class="col-sm-12 col-md-4 col-lg-4 col-12">
+  <!-- (24)Form taken from Bootstrap -->
+
+  <!-- Form  -->
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+
+  <!-- Form  -->
+
+</div>
+
+<!-- image -->
+
+<!-- (25)contact Image added  -->
+<!-- (26)make image responsive by adding class of img-fluid  -->
+<!-- (27) m-auto & text-end added to horizonatlly set the image at the end  -->
+<div class="col-sm-12 col-md-4 col-lg-4 col-12 text-end m-auto" data-aos="zoom-in">
+  <img src="contact.jpg" alt="Insituition Name" class="img-fluid">
+</div>
+  </div>   
+</section>
+
+<!-- Footer  -->
+<!-- (28) Container added which will take the full width of the view-port  -->
+
+
+
+
+<div class="container-fluid bg-light p-2 text-center mt-5 text-dark">
+  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram mx-5"></i></a>
+  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook mx-5"></i></a>
+
+ <a href="https://twitter.com/Ashishash98"><i class="fa-brands fa-twitter mx-5"></i></a>
+ <a href="https://www.linkedin.com/in/ashish-nath-9585b622b/"><i class="fa-brands fa-linkedin mx-5"></i></a>
+ <p>techno-web <i class="fa-regular fa-copyright mt-3">2023</i></p>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
